@@ -1,0 +1,10 @@
+services:
+  omilix_web:
+    build: .
+    ports:
+      - "2025:2025"
+    restart: always
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - .:/app
